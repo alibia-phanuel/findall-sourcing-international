@@ -1,0 +1,104 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "sourcing": "Sourcing",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Fondé en 2026",
+    "title": "Connecter le Monde aux Marchés Émergents",
+    "subtitle": "Trading international, logistique et sourcing depuis la Chine vers l'Afrique et au-delà.",
+    "cta_primary": "Nos Services",
+    "cta_whatsapp": "WhatsApp"
+  },
+  "about": {
+    "title": "Qui Sommes-Nous ?",
+    "description": "FINDALL INTERNATIONAL TRADING GROUPE SARL est une société de trading et de services diversifiés spécialisée dans le commerce international, la coordination logistique et les solutions multi-secteurs. Nous connectons les fournisseurs mondiaux aux marchés émergents, particulièrement en Afrique.",
+    "markets": "Marchés : Afrique · Asie · Europe",
+    "founded": "Fondée en 2026"
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Des solutions complètes pour vos besoins commerciaux et industriels",
+    "items": {
+      "trading": {
+        "title": "Commerce Général",
+        "desc": "Distribution d'une large gamme de produits non spécialisés."
+      },
+      "import_export": {
+        "title": "Import / Export",
+        "desc": "Sourcing mondial et facilitation vers les marchés africains et internationaux."
+      },
+      "logistics": {
+        "title": "Freight & Logistique",
+        "desc": "Transport de fret maritime, aérien et terrestre."
+      },
+      "services": {
+        "title": "Services B2B & B2C",
+        "desc": "Solutions sur mesure pour particuliers et entreprises."
+      },
+      "insurance": {
+        "title": "Courtage Assurance",
+        "desc": "Assistance et services intermédiaires en solutions d'assurance."
+      },
+      "mining": {
+        "title": "Industrie & Mines",
+        "desc": "Support aux opérations extractives : cobalt, nickel et plus."
+      },
+      "construction": {
+        "title": "Construction & BTP",
+        "desc": "Participation à des projets de construction et d'infrastructure."
+      },
+      "waste": {
+        "title": "Gestion des Déchets",
+        "desc": "Collecte, traitement et élimination des déchets."
+      }
+    }
+  },
+  "sourcing": {
+    "title": "FINDALL SOURCING",
+    "subtitle": "Votre agent sourcing professionnel en Chine",
+    "description": "Basés à Guangzhou, Shenzhen et Yiwu, nous aidons les clients internationaux à obtenir des produits de haute qualité aux meilleurs prix.",
+    "steps": {
+      "suppliers": {
+        "title": "Sélection Fournisseurs",
+        "desc": "Vérification et sélection des fournisseurs selon vos critères."
+      },
+      "production": {
+        "title": "Suivi Production",
+        "desc": "Supervision du processus de fabrication en temps réel."
+      },
+      "quality": {
+        "title": "Contrôle Qualité",
+        "desc": "Inspection dédiée pour minimiser les défauts avant expédition."
+      },
+      "shipping": {
+        "title": "Organisation Expédition",
+        "desc": "Coordination avec les transitaires et préparation douanière."
+      },
+      "custom": {
+        "title": "Personnalisation",
+        "desc": "Logo, packaging privé et développement de nouveaux produits."
+      },
+      "network": {
+        "title": "Réseau National",
+        "desc": "Fournisseurs dans toute la Chine, pas seulement Yiwu ou Guangzhou."
+      }
+    },
+    "tagline": "When you want it, we find it!"
+  },
+  "contact": {
+    "title": "Contactez-Nous",
+    "subtitle": "Nous sommes disponibles sur WhatsApp, WeChat et par email",
+    "address": "Mimboman, Yaoundé, Cameroun",
+    "phones": "Téléphones",
+    "email": "Email",
+    "whatsapp": "Écrire sur WhatsApp"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "tagline": "Connecting the world to emerging markets."
+  }
+}
