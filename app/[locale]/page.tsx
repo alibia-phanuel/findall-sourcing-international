@@ -10,7 +10,7 @@ export default function HomePage() {
       <AboutSection />
       <ServicesSection />
       <SourcingSection />
-         <ContactSection />
+      <ContactSection />
     </>
   );
 }

@@ -137,7 +137,7 @@ export default function HeroSection(): JSX.Element {
       >
         <div className="max-w-4xl">
           {/* Badge */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -145,7 +145,7 @@ export default function HeroSection(): JSX.Element {
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#E02020] animate-pulse" />
             {t("badge")}
-          </motion.div>
+          </motion.div> */}
 
           {/* Titre */}
           <motion.h1
