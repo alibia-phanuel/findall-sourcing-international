@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/images/logo-light.jpg" alt="FINDALL Logo" width="80" height="80" style="border-radius: 16px;" />
+<img src="public/images/logo-light.png.jpg" alt="FINDALL Logo" width="80" height="80" style="border-radius: 16px;" />
 
 # FINDALL International Trading — Website
 
@@ -48,38 +48,6 @@ Corporate website for **FINDALL International Trading Groupe SARL**, a Camerooni
 | i18n | next-intl |
 | Theme | next-themes |
 | Icons | react-icons, react-country-flag |
-
----
-
-## 🗂️ Project Structure
-
-
-├── app/
-│   └── [locale]/          # FR/EN routing
-│       ├── layout.tsx     # Providers: ThemeProvider, NextIntlClientProvider
-│       ├── page.tsx       # Home — all sections composed
-│       ├── about/
-│       ├── services/
-│       ├── sourcing/
-│       └── contact/
-├── components/
-│   ├── layout/
-│   │   ├── Navbar.tsx     # Fixed, scroll-aware, mobile menu
-│   │   ├── Footer.tsx     # 4-column, social links
-│   │   └── PageHeader.tsx # Reusable animated page hero
-│   └── sections/
-│       ├── HeroSection.tsx      # Parallax hero with animated orbs
-│       ├── AboutSection.tsx     # Split layout with floating cards
-│       ├── ServicesSection.tsx  # 8-card grid with 3D hover
-│       ├── SourcingSection.tsx  # Timeline + parallax background
-│       └── ContactSection.tsx   # 3-column contact cards + CTA
-├── messages/
-│   ├── fr.json            # French translations
-│   └── en.json            # English translations
-├── lib/
-│   └── data.ts            # Contact info, service/sourcing keys
-└── i18n/
-└── request.ts         # next-intl server config---
 
 ## 🎨 Design Decisions
 
