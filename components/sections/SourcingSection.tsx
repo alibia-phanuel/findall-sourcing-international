@@ -136,15 +136,25 @@ export default function SourcingSection() {
             <FadeIn delay={0}>
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-8 h-px bg-[#1A3A8F]" />
-                <span
-                  className={`text-xs font-bold uppercase tracking-[0.2em] transition-colors duration-500 ${
-                    isDark ? "text-neutral-500" : "text-neutral-400"
+                <a
+                  href="https://findallsourcing.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`group flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_15px_rgba(26,58,143,0.3)] ${
+                    isDark
+                      ? "border-[#1A3A8F]/50 text-[#4a7fff] bg-[#1A3A8F]/10 hover:bg-[#1A3A8F]/20 hover:border-[#4a7fff]"
+                      : "border-[#1A3A8F]/30 text-[#1A3A8F] bg-[#1A3A8F]/08 hover:bg-[#1A3A8F]/15 hover:border-[#1A3A8F]"
                   }`}
                 >
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#1A3A8F] animate-pulse" />
                   {locale === "fr"
                     ? "Branche Spécialisée"
                     : "Specialized Branch"}
-                </span>
+                  <HiArrowRight
+                    size={13}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
+                </a>
               </div>
             </FadeIn>
 
@@ -217,6 +227,173 @@ export default function SourcingSection() {
                 />
               </a>
             </FadeIn>
+
+            {/* ── SERVICES ADDITIONNELS ── */}
+            <FadeIn delay={0.5}>
+              <div className="flex flex-col gap-4 mt-8">
+                {/* Visa & Admission */}
+                <div
+                  className={`rounded-2xl p-5 border transition-colors duration-500 ${
+                    isDark
+                      ? "bg-neutral-800/60 border-neutral-700"
+                      : "bg-white border-neutral-200 shadow-sm"
+                  }`}
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div
+                      className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
+                      style={{ backgroundColor: "#E0202015", color: "#E02020" }}
+                    >
+                      <span className="text-base">🛂</span>
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-black uppercase tracking-wider text-[#E02020]">
+                        02
+                      </p>
+                      <h4
+                        className={`text-sm font-bold leading-tight transition-colors duration-500 ${
+                          isDark ? "text-white" : "text-neutral-900"
+                        }`}
+                      >
+                        {locale === "fr"
+                          ? "Visa & Admission Universitaire"
+                          : "Visa Application & Study Admission"}
+                      </h4>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    {[
+                      {
+                        icon: "💼",
+                        label:
+                          locale === "fr"
+                            ? "Visa Business / M"
+                            : "Business / M Visa",
+                      },
+                      {
+                        icon: "⚙️",
+                        label:
+                          locale === "fr"
+                            ? "Visa Travail / Z"
+                            : "Work / Z Visa",
+                      },
+                      {
+                        icon: "🎓",
+                        label:
+                          locale === "fr"
+                            ? "Visa Étudiant / X"
+                            : "Student / X Visa",
+                      },
+                      {
+                        icon: "🏫",
+                        label:
+                          locale === "fr"
+                            ? "Admission Scolaire"
+                            : "School Admission",
+                      },
+                      {
+                        icon: "🏆",
+                        label:
+                          locale === "fr" ? "Bourse d'études" : "Scholarship",
+                      },
+                    ].map((item) => (
+                      <div
+                        key={item.label}
+                        className={`flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium transition-colors duration-300 ${
+                          isDark
+                            ? "bg-neutral-900/80 text-neutral-300"
+                            : "bg-neutral-50 text-neutral-600"
+                        }`}
+                      >
+                        <span>{item.icon}</span>
+                        <span>{item.label}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Quality Control */}
+                <div
+                  className={`rounded-2xl p-5 border transition-colors duration-500 ${
+                    isDark
+                      ? "bg-neutral-800/60 border-neutral-700"
+                      : "bg-white border-neutral-200 shadow-sm"
+                  }`}
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <div
+                      className="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
+                      style={{ backgroundColor: "#1A3A8F15", color: "#1A3A8F" }}
+                    >
+                      <span className="text-base">✅</span>
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-black uppercase tracking-wider text-[#1A3A8F]">
+                        03
+                      </p>
+                      <h4
+                        className={`text-sm font-bold leading-tight transition-colors duration-500 ${
+                          isDark ? "text-white" : "text-neutral-900"
+                        }`}
+                      >
+                        {locale === "fr"
+                          ? "Contrôle Qualité & Inspection"
+                          : "Quality Control & Inspection"}
+                      </h4>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    {[
+                      {
+                        icon: "🔍",
+                        label:
+                          locale === "fr"
+                            ? "Inspection Produits"
+                            : "Product Inspections",
+                      },
+                      {
+                        icon: "🏭",
+                        label:
+                          locale === "fr" ? "Audit Usine" : "Factory Audits",
+                      },
+                      {
+                        icon: "📋",
+                        label:
+                          locale === "fr"
+                            ? "Vérification Qualité"
+                            : "Quality Verification",
+                      },
+                      {
+                        icon: "📦",
+                        label:
+                          locale === "fr"
+                            ? "Contrôle Emballage"
+                            : "Packaging Checks",
+                      },
+                      {
+                        icon: "🚢",
+                        label:
+                          locale === "fr"
+                            ? "Inspection Pré-expéd."
+                            : "Pre-shipment Inspect.",
+                      },
+                    ].map((item) => (
+                      <div
+                        key={item.label}
+                        className={`flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-medium transition-colors duration-300 ${
+                          isDark
+                            ? "bg-neutral-900/80 text-neutral-300"
+                            : "bg-neutral-50 text-neutral-600"
+                        }`}
+                      >
+                        <span>{item.icon}</span>
+                        <span>{item.label}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </FadeIn>
           </div>
 
           {/* Card Tagline */}
@@ -236,7 +413,7 @@ export default function SourcingSection() {
                   isDark ? "text-white" : "text-neutral-900"
                 }`}
               >
-                {t("tagline")}
+                0{t("tagline")}
               </p>
 
               <p
@@ -251,11 +428,12 @@ export default function SourcingSection() {
                 {[
                   {
                     value: "6",
-                    label: locale === "fr" ? "Étapes clés" : "Key steps",
+                    label:
+                      locale === "fr" ? "Étapes Sourcing" : "Sourcing Steps",
                   },
                   {
-                    value: "3",
-                    label: locale === "fr" ? "Villes CN" : "CN Cities",
+                    value: "3+",
+                    label: locale === "fr" ? "Services CN" : "CN Services",
                   },
                   {
                     value: "100%",

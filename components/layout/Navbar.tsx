@@ -70,7 +70,6 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-
           {/* LOGO */}
           <Link href={`/${locale}`} className="flex items-center gap-3 group">
             {mounted && (
@@ -93,7 +92,7 @@ export default function Navbar() {
                   isDark ? "text-neutral-400" : "text-neutral-400"
                 }`}
               >
-                International
+                International Trading Groupe SARL
               </p>
             </div>
           </Link>
@@ -125,24 +124,23 @@ export default function Navbar() {
 
           {/* ACTIONS DROITE */}
           <div className="flex items-center gap-2">
-
             {/* LANGUE */}
-{/* LANGUE DESKTOP */}
-<button
-  onClick={switchLocale}
-  className={`hidden sm:flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-full border transition-all duration-200 hover:border-[#E02020] hover:text-[#E02020] ${
-    isDark
-      ? "border-neutral-700 text-neutral-300"
-      : "border-neutral-200 text-neutral-600"
-  }`}
->
-  <ReactCountryFlag
-    countryCode={locale === "fr" ? "FR" : "GB"}
-    svg
-    style={{ fontSize: "1.2em" }}
-  />
-  <span>{locale === "fr" ? "EN" : "FR"}</span>
-</button>
+            {/* LANGUE DESKTOP */}
+            <button
+              onClick={switchLocale}
+              className={`hidden sm:flex items-center gap-1.5 px-3 py-1.5 text-xs font-bold rounded-full border transition-all duration-200 hover:border-[#E02020] hover:text-[#E02020] ${
+                isDark
+                  ? "border-neutral-700 text-neutral-300"
+                  : "border-neutral-200 text-neutral-600"
+              }`}
+            >
+              <ReactCountryFlag
+                countryCode={locale === "fr" ? "FR" : "GB"}
+                svg
+                style={{ fontSize: "1.2em" }}
+              />
+              <span>{locale === "fr" ? "EN" : "FR"}</span>
+            </button>
 
             {/* THEME TOGGLE */}
             {mounted && (
@@ -219,7 +217,10 @@ export default function Navbar() {
                 }`}
               >
                 <button
-                  onClick={() => { switchLocale(); setIsOpen(false); }}
+                  onClick={() => {
+                    switchLocale();
+                    setIsOpen(false);
+                  }}
                   className={`flex items-center gap-2 px-4 py-3 text-sm font-medium w-full rounded-xl transition-colors ${
                     isDark
                       ? "text-neutral-300 hover:bg-neutral-800"
@@ -228,7 +229,9 @@ export default function Navbar() {
                 >
                   <span>{locale === "fr" ? "🇬🇧" : "🇫🇷"}</span>
                   <span>
-                    {locale === "fr" ? "Switch to English" : "Passer en Français"}
+                    {locale === "fr"
+                      ? "Switch to English"
+                      : "Passer en Français"}
                   </span>
                 </button>
               </div>

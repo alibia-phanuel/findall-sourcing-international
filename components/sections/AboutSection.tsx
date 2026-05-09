@@ -276,7 +276,7 @@ export default function AboutSection() {
                 {/* Stats */}
                 <div className="grid grid-cols-3 gap-4 mb-8">
                   {[
-                    { value: "2026", label: locale === "fr" ? "Fondée" : "Founded" },
+                    { value: "2020", label: locale === "fr" ? "Fondée" : "Founded" },
                     { value: "8+", label: locale === "fr" ? "Secteurs" : "Sectors" },
                     { value: "3", label: locale === "fr" ? "Continents" : "Continents" },
                   ].map((stat) => (

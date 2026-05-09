@@ -353,7 +353,7 @@ export default function ContactSection() {
             <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-6 p-8 sm:p-10">
               <div>
                 <p className="text-white/70 text-sm font-medium mb-1 uppercase tracking-widest">
-                  FINDALL International Trading
+                  FINDALL International Trading Groupe Sarl
                 </p>
                 <h3 className="text-2xl sm:text-3xl font-black text-white">
                   {locale === "fr"

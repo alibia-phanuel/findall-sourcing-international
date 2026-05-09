@@ -1,14 +1,9 @@
 export const contacts = {
-  phones: [
-    "+86 197 0881 2457",
-    "+86 198 1760 4580",
-    "+237 654 011 233",
-    "+237 678 830 036",
-  ],
+  phones: ["+86 197 0881 2457", "+237 653 211 073"],
   emails: ["everything.findallsourcing@gmail.com", "funnuepa@gmail.com"],
   address: "Mimboman, Yaoundé, Cameroun",
-  whatsapp: "8619708812457",
-  wechat: "+86 19817604580",
+  whatsapp: "237653211073",
+  wechat: "+86 19708812457",
 };
 
 export const serviceKeys = [
